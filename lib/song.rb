@@ -37,6 +37,10 @@ class Song
   
   @@artists= [ ]
   
+  def self.artists
+    @@artists.uniq 
+  end 
+  
   def self.artists 
     artists= { } 
     @@artists.each do |artist|
