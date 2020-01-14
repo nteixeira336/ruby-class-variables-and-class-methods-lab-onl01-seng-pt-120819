@@ -41,16 +41,16 @@ class Song
     @@artists.uniq 
   end 
   
-  def self.artists 
-    artists= { } 
+  def self.artist_count 
+    artist_count= { } 
     @@artists.each do |artist|
-      if artists[artist]
-        artists[artist] +=1 
+      if artist_count[artist]
+        artist_count[artist] +=1 
       else
-        artists[artist] =1 
+        artist_count[artist] =1 
       end 
     end 
-    artists 
+    artist_count  
   end 
   
 end 
